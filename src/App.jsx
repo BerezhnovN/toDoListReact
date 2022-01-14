@@ -17,8 +17,6 @@ function App() {
   });
 
   const changeCheckbox = async (id, hasCheck) => {
-    console.log(id);
-    console.log(hasCheck);
     await axios
       .patch(`${link}/updateTask`, {
         _id: id,

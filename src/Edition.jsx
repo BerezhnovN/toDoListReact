@@ -6,7 +6,6 @@ const link = "http://localhost:8000";
 const Edition = ({task, changeState}) => {
     const [text, setText] = useState(task.text);
     const remakeTask = async () => {
-        console.log('aaaaaaaaaaaaaaaa');
         await axios
           .patch(`${link}/updateTask`, {
             _id: task._id,
